@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>alfred.zvaehn.quickemo</string>
+	<key>connections</key>
+	<dict>
+		<key>93DD2EA7-5C55-4EAE-B8E6-42699BCB85AB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3BC936CD-2D99-4C3B-94CF-B927CD0437DA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>20F6A053-0854-4EEF-8CB5-8D2E58425663</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>A97F3DD0-A237-4FC8-A6ED-CA164F2A7712</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3BC936CD-2D99-4C3B-94CF-B927CD0437DA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>20F6A053-0854-4EEF-8CB5-8D2E58425663</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Sven Schiffer</string>
+	<key>description</key>
+	<string>Allows you to quickly paste your favorite emoticons.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Quick Emoticons</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>3BC936CD-2D99-4C3B-94CF-B927CD0437DA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>emo</string>
+				<key>runningsubtext</key>
+				<string>Showing all smileys</string>
+				<key>script</key>
+				<string>require('application.php');
+$app = new Application();
+$query = "{query}";
+
+$app-&gt;get_all();
+
+
+</string>
+				<key>title</key>
+				<string>Your emoticons</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A97F3DD0-A237-4FC8-A6ED-CA164F2A7712</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Copied smiley to clipboard</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>20F6A053-0854-4EEF-8CB5-8D2E58425663</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>emo</string>
+				<key>runningsubtext</key>
+				<string>Filtering your emoticons...</string>
+				<key>script</key>
+				<string>require('application.php');
+$app = new Application();
+$query = "{query}";
+
+$app-&gt;get("{query}");
+
+
+</string>
+				<key>subtext</key>
+				<string>Type in your emoticon bind</string>
+				<key>title</key>
+				<string>Search {query}</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>93DD2EA7-5C55-4EAE-B8E6-42699BCB85AB</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>To add your custom emoticons go into the file “emoticons.php” and add your custom stuff into this array.
+
+It’s really simple. No programming knowledge necessary!</string>
+	<key>uidata</key>
+	<dict>
+		<key>20F6A053-0854-4EEF-8CB5-8D2E58425663</key>
+		<dict>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>3BC936CD-2D99-4C3B-94CF-B927CD0437DA</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+		<key>93DD2EA7-5C55-4EAE-B8E6-42699BCB85AB</key>
+		<dict>
+			<key>ypos</key>
+			<real>240</real>
+		</dict>
+		<key>A97F3DD0-A237-4FC8-A6ED-CA164F2A7712</key>
+		<dict>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://sven-schiffer.de</string>
+</dict>
+</plist>
