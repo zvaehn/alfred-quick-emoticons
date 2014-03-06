@@ -15,7 +15,7 @@ Usage
 - Type in `emo` followed by a `space` and add a searchword you specified in `emoticons.php`
 
 
-Customization (NOT WORKING THIS WAY RIGHT NOW)
+Customization
 -------------
 Don't worry, I can assure you that you dont need any programming knowledge!
 
@@ -25,3 +25,4 @@ Don't worry, I can assure you that you dont need any programming knowledge!
 - Select `Show in Finder`
 - Open the file `emoticons.php`
 - Add your emoticon 
+- Finished. Wasn't that hard, was it?
