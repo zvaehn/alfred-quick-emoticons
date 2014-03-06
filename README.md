@@ -3,15 +3,17 @@ alfred-quick-emoticons
 
 Alfred workflow which allows you to quickly paste your favorite ASCII-emoticons into clipboard.
 
+**IMPORTANT: You need to buy the [Alfred Powerpack](http://www.alfredapp.com/powerpack/) to use this workflow (like every workflow).**
+
 Installing / Download
 ---------------------
 - Download workflow [here](https://github.com/zvaehn/alfred-quick-emoticons/raw/master/download/quick_emoticons.alfredworkflow)
-- Open it and click `import` when Alfred asks you to do so.
+- Open it and click `import` when Alfred asks you to do so
 
 
 Usage
 -----
-- Type in `emo` to see all your emoticons.<br>
+- Type in `emo` to see all your emoticons<br>
 - Type in `emo` followed by a `space` plus a `keyword` will filter your emoticons
 
 
