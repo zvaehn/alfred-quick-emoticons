@@ -3,7 +3,7 @@ alfred-quick-emoticons
 
 Alfred workflow which allows you to quickly paste your favorite ASCII-emoticons into clipboard.
 
-**IMPORTANT: You need to buy the [Alfred Powerpack](http://www.alfredapp.com/powerpack/) to use this workflow (like every workflow).**
+**IMPORTANT: You need to buy the [Alfred Powerpack](http://www.alfredapp.com/powerpack/) to use this workflow (and any other workflow).**
 
 Installing / Download
 ---------------------
