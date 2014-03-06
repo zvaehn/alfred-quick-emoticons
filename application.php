@@ -1,26 +1,9 @@
 <?php
-include 'emoticons.php';
-
 class Application {
-
-	private $emoticons = array(
-	'whatever' => '¯\_(ツ)_/¯',
-	'idontcare' => '╭∩╮（︶︿︶）╭∩╮',
-	'dong' => '(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄',
-	'donger' => 'ヽ༼ຈل͜ຈ༽ﾉ',
-	'tableflip' => '(╯°□°）╯︵ ┻━┻)',
-	'haha' => '☜(ﾟヮﾟ☜)',
-	'butterfly' => 'Ƹ̵̡Ӝ̵̨̄Ʒ',
-	'polarbear' => 'ˁ˚ᴥ˚ˀ',
-	'coffee' => 'c[_]',
-	'angry' => 'ლ(ಠ益ಠ)ლ',
-	'facepalm' => '(>ლ)',
-	'yuno' => '(ノಠ益ಠ)ノ',
-	'gimme' => '༼ つ ◕_◕ ༽つ',
-	'sunglass' => '( •_•)>⌐■-■',
-	'pacman' => 'ᗧ͇̿ · · ᗣ͇̿ᗣ͇̿ᗣ͇̿ᗣ͇̿',
-	'dollar' => '[̲̅$̲̅(̲̅1̲̅)̲̅$̲̅]',
-	);
+	
+	function __construct($emoticons = null) {
+		$this->emoticons = $emoticons;
+	}
 
 	function get_all() {
 		echo '<?xml version="1.0"?>';
