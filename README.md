@@ -6,13 +6,13 @@ Alfred workflow which allows you to quickly paste your favorite ASCII-emoticons 
 Installing / Download
 ---------------------
 - Download workflow [here](https://github.com/zvaehn/alfred-quick-emoticons/raw/master/download/quick_emoticons.alfredworkflow)
-- Open it and klick `import` when Alfred asks you to do so.
+- Open it and click `import` when Alfred asks you to do so.
 
 
 Usage
 -----
 - Type in `emo` to see all your emoticons.<br>
-- Type in `emo` followed by a `space` and add a searchword you specified in `emoticons.php`
+- Type in `emo` followed by a `space` plus a `keyword` will filter your emoticons
 
 
 Customization
