@@ -7,9 +7,19 @@ class Application {
 	'whatever' => '¯\_(ツ)_/¯',
 	'idontcare' => '╭∩╮（︶︿︶）╭∩╮',
 	'dong' => '(̿▀̿ ̿Ĺ̯̿̿▀̿ ̿)̄',
+	'donger' => 'ヽ༼ຈل͜ຈ༽ﾉ',
 	'tableflip' => '(╯°□°）╯︵ ┻━┻)',
-	'test' => 'Test successfull!',
 	'haha' => '☜(ﾟヮﾟ☜)',
+	'butterfly' => 'Ƹ̵̡Ӝ̵̨̄Ʒ',
+	'polarbear' => 'ˁ˚ᴥ˚ˀ',
+	'coffee' => 'c[_]',
+	'angry' => 'ლ(ಠ益ಠ)ლ',
+	'facepalm' => '(>ლ)',
+	'yuno' => '(ノಠ益ಠ)ノ',
+	'gimme' => '༼ つ ◕_◕ ༽つ',
+	'sunglass' => '( •_•)>⌐■-■',
+	'pacman' => 'ᗧ͇̿ · · ᗣ͇̿ᗣ͇̿ᗣ͇̿ᗣ͇̿',
+	'dollar' => '[̲̅$̲̅(̲̅1̲̅)̲̅$̲̅]',
 	);
 
 	function get_all() {
@@ -49,9 +59,9 @@ class Application {
 		if($count == 0) {
 			echo '
 				<item uid="empty" arg="">
-					<title>Nothing found for "'.$query.'".</title>
-					<subtitle>Try other searchwords. Try e.g. "'.array_rand($this->emoticons).'"</subtitle>
-					<icon>icon.png</icon>
+					<title>Nothing found for \''.$query.'\'.</title>
+					<subtitle>Try other searchwords. Try e.g. \''.array_rand($this->emoticons).'\'</subtitle>
+					<icon>notfound.png</icon>
 				</item>';
 		}
 		echo '</items>';
