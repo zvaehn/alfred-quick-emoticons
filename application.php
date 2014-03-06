@@ -29,7 +29,7 @@ class Application {
 			echo '
 				<item uid="'.$key.'" arg="'.$value.'">
 					<title>'.$value.'</title>
-					<subtitle>Press enter to copy into clipboard.</subtitle>
+					<subtitle>Press enter to copy \''.$key.'\' into clipboard.</subtitle>
 					<icon>icon.png</icon>
 				</item>';
 		}
@@ -48,7 +48,7 @@ class Application {
 				echo '
 				<item uid="'.$key.'" arg="'.$value.'">
 					<title>'.$value.'</title>
-					<subtitle>Press enter to copy into clipboard.</subtitle>
+					<subtitle>Press enter to copy \''.$key.'\' into clipboard.</subtitle>
 					<icon>icon.png</icon>
 				</item>';
 			}
