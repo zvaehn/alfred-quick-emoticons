@@ -83,7 +83,9 @@
 				<string>Showing all smileys</string>
 				<key>script</key>
 				<string>require('application.php');
-$app = new Application();
+require('emoticons.php');
+
+$app = new Application($emoticons);
 $query = "{query}";
 
 $app-&gt;get_all();
@@ -142,9 +144,9 @@ $app-&gt;get_all();
 				<string>Filtering your emoticons...</string>
 				<key>script</key>
 				<string>require('application.php');
-$app = new Application();
-$query = "{query}";
+require('emoticons.php');
 
+$app = new Application($emoticons);
 $app-&gt;get("{query}");
 
 
