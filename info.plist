@@ -82,14 +82,13 @@
 				<key>runningsubtext</key>
 				<string>Showing all smileys</string>
 				<key>script</key>
-				<string>require('application.php');
-require('emoticons.php');
+				<string>require('emoticons.php');
+require('application.php');
 
 $app = new Application($emoticons);
 $query = "{query}";
 
 $app-&gt;get_all();
-
 
 </string>
 				<key>title</key>
@@ -143,12 +142,11 @@ $app-&gt;get_all();
 				<key>runningsubtext</key>
 				<string>Filtering your emoticons...</string>
 				<key>script</key>
-				<string>require('application.php');
-require('emoticons.php');
+				<string>require('emoticons.php');
+require('application.php');
 
 $app = new Application($emoticons);
 $app-&gt;get("{query}");
-
 
 </string>
 				<key>subtext</key>
