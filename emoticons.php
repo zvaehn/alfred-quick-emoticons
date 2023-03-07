@@ -28,7 +28,7 @@ $emoticons = array(
 	'this' => '(☞ﾟヮﾟ)☞',
 	'cries' => '(ಥ﹏ಥ)',
 	'bored' => '(¬_¬)',
-	'confused' => '༼☉︵⊙༽'
+	'confused' => '༼☉︵⊙༽',
 	//'shortname' => 'your emoticon goes in here :-)',
 );
-?>
+

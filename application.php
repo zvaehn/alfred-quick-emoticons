@@ -1,6 +1,7 @@
 <?php
 class Application {
-	
+	public $emoticons;
+
 	function __construct($emoticons = null) {
 		$this->emoticons = $emoticons;
 	}
@@ -36,8 +37,8 @@ class Application {
 				</item>';
 			}
 		}
-		/* 
-		* Fallback 
+		/*
+		* Fallback
 		*/
 		if($count == 0) {
 			echo '
@@ -52,4 +53,3 @@ class Application {
 
 
 }
-?>
